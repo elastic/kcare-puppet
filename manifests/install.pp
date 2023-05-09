@@ -15,7 +15,7 @@ class kernelcare::install(
   wget::retrieve { 'installation script':
     source      => $installation_script_url,
     destination => "${installation_script_path}/kernelcare_install.sh",
-    timeout     => 0,
+    timeout     => 8,
     verbose     => true,
   }
 
